@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Welcome Hyperactive Pig</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="header">
+		<div class="slide">
+		  <img src="images\pig love.gif" alt="#">
+		</div>
+		<div class="slide"> 
+		  <marquee behavior="alternate"><marquee width="150">Hết bực mình nhé!!!</marquee></marquee>
+		</div>
+		<button  onclick="scrollWin()" style="position:fixed">Click me</button>
+	</div>
+
+<div class="main">
+    <!-- top section -->
+    <div class="top_section">
+  		<h5>Audio Player&nbsp;&nbsp;<i class="fa fa-headphones" aria-hidden="true"></i></h5>
+  	</div>
+
+
+  <div class="tracks">
+    
+    <!-- list of song will add here from 'song_list.js' file -->
+
+    <!-- small music player -->
+    <div class="small_music_player">
+    	<div class="s_player_img">
+    		<div class="playing_img">
+    			<img src="https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/240662557_3000046163589769_7471450404746417042_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=174925&_nc_ohc=xu_pCFzD9zUAX8qe_Ra&tn=xPRBCGX4An7MyVPr&_nc_ht=scontent.fhan5-11.fna&oh=00_AT-Pf7yDTKALu1Fpi9nZYe8vwafQIx0F-m7OFPzlInz7Vw&oe=61DA9447" alt="">
+    		</div>
+    	
+           <!-- wave animation part -->
+    	   <div class="wave_animation">
+			 <li></li>
+			 <li></li>
+			 <li></li>
+			 <li></li>
+			 <li></li>
+	       </div>
+	    </div>
+
+    	<div class="song_detail">
+    		<p id="song_name">Khát vọng ngày đông</p>
+    		<p id="artist_name">Người kể chuyện</p>
+    	</div>
+    	<i class="fa fa-chevron-up" aria-hidden="true" id="up_player"></i>
+    </div>
+
+
+    <!--  popup music player part -->
+    <div class="popup_music_player">
+         <div class="top">
+    	    <p>Now Playing</p>
+    	    <i class="fa fa-chevron-down" aria-hidden="true" id="down_player"></i>
+        </div>
+        
+       <div class="song_img">
+          <img src="images/1.jpg" alt="">
+       </div>
+
+       <div class="song_description">
+          <h3 id="current_track_name">Khát vọng ngày đông</h3>
+          <p id="current_singer_name">Người kể chuyện</p>
+       </div>
+
+       <div class="controlls">
+    	 <div class="progress_part">
+    		<input type="range" min="0" max="100" value="0" id="slider" onchange="change_duration()">
+    		<div class="durations">
+    			<p id="current_duration">0:00</p>
+    		    <p id="total_duration">0:00</p>
+    		</div>
+
+       </div>
+    		
+        <!-- controlls btn's -->
+        <div class="controlls_btns">
+			<button id="backward_btn"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+			<button id="play_pause_btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+			<button id="forward_btn"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="newyear">
+		<canvas id="canvas">Canvas is not supported in your browser.</canvas>
+	 
+		<h1>Happy New Years</h1>
+		<audio id="audio" src="images\HappyNewYear-ABBA-1595921.mp3"></audio>
+</div>
+	
+
+<!-- song list file -->
+<script src="song_list.js"></script>
+<!-- javascript -->
+<script src="main.js"></script>
+	
+</body>
+</html>
