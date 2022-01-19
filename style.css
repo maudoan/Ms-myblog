@@ -402,6 +402,8 @@ h1{
   position: relative;
     top: 50px;
     overflow: hidden;
+    height: 80%;
+    width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -409,5 +411,4 @@ h1{
     background: linear-gradient(to bottom right,#673AB7,#7E57C2);
     box-shadow: 0.1px 4px 8px 4px rgba(0,0,0,0.5);
 }
-}
- 
+ }
