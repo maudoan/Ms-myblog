@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'poppins',sans-serif;
+  font-family: inherit;
 }
 body{
 	display: grid;
@@ -58,7 +58,7 @@ body{
   padding: 10px 0;
   padding-bottom: 50px;
 }
-.tracks::-webkit-scrollbar {
+.tracks::-webkit-scrollbar{
   display: none;
 }
 .tracks .song:not(:first-child){
@@ -413,7 +413,7 @@ h1{
 }
  }
 .song_img {
-  animation: rotate 29s linear infinite;
+  animation: rotate s linear infinite;
 }
 @keyframes rotate {
   0% {
