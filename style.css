@@ -412,3 +412,14 @@ h1{
     box-shadow: 0.1px 4px 8px 4px rgba(0,0,0,0.5);
 }
  }
+.song_img {
+  animation: rotate 9s linear infinite;
+}
+@keyframes rotate {
+  0% {
+      transform: rotate(0);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}

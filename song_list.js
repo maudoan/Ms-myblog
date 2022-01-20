@@ -54,6 +54,24 @@ let All_song = [
 	img: "images/pic9.jpg",
 	singer: "Người kể chuyện"
   },
+  {
+	name: "Đợi chờ một tình yêu",
+	path: "images/blog radio20.mp3",
+	img: "images/pic10.jpg",
+	singer: "Người kể chuyện"
+  },
+  {
+	name: "Hôn nhân là điều tuyệt vời nhất",
+	path: "images/blog radio 21.mp3",
+	img: "images/pic11.jpg",
+	singer: "Người kể chuyện"
+  },
+  {
+	name: "Hàn gắn một trái tim",
+	path: "images/blog radio22.mp3",
+	img: "images/pic12.jpg",
+	singer: "Người kể chuyện"
+  }
 ];
 /*you can add more song & images from you computer*/
 
