@@ -413,7 +413,7 @@ h1{
 }
  }
 .song_img {
-  animation: rotate s linear infinite;
+  animation: rotate 29s linear infinite;
 }
 @keyframes rotate {
   0% {
