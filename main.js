@@ -116,6 +116,14 @@ function pause_song(){
       clearInterval(update_second);
   	  wave_animation.style.opacity = '0';
       play_pause_btn.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
+      index_no = index_no + 1;
+      if (index_no == All_song.length) {
+        index_no = 0;
+      }
+    
+      song[index_no].currentTime = 0;
+        play_song();
+        random_bg_color();
     }
  }
  
