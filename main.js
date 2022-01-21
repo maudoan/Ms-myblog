@@ -153,6 +153,7 @@ play_pause_btn.addEventListener('click', function(){
       wave_animation.style.opacity = '0';
       this.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
   	}
+    audio.pause();
 });
 
 
