@@ -390,7 +390,7 @@ box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
    display: block;
  }
 h1{
-   color: black;
+   color: rgba(192, 17, 17, 0.9);
    position: relative;
    text-align: center;
    bottom: 690px;

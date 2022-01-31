@@ -229,7 +229,6 @@ function play_song(){
 
 /*Lấy thời gian tết âm lịch (mily giây)*/
 var tetAmLich = new Date(2022, 1, 1, 0, 0, 0).getTime();
- 
 function newYear() {
     /*Lấy thời gian ngày hiện tại (mily giây) */
     var ngayHienTai = new Date().getTime();
@@ -258,8 +257,5 @@ function newYear() {
 
 /*Thiết Lập hàm sẽ tự động chạy lại sau 1s*/
 setInterval(function () {
-    newYear()
-    if(day==0&&h==0&&m==0&&s==0){
-      audio.play();
-    }
+    newYear();
 }, 1000)
