@@ -228,7 +228,7 @@ function play_song(){
 }
 
 /*Lấy thời gian tết âm lịch (mily giây)*/
-var tetAmLich = new Date(2022, 1, 1, 0, 0, 0).getTime();
+var tetAmLich = new Date(2022, 1, 16, 0, 0, 0).getTime();
 function newYear() {
     /*Lấy thời gian ngày hiện tại (mily giây) */
     var ngayHienTai = new Date().getTime();
