@@ -8,7 +8,7 @@
 body{
 	display: grid;
 	place-items: center;
-	min-height: 100vh;
+	min-height: 190vh;
 }
 .main{
     position: relative;
@@ -509,3 +509,10 @@ h1{
 .countdown #second:before{
   content: 'Giây';
 }
+@media only screen and (max-width: 63.93753em) { h1{
+ bottom: 50%;
+}
+.container h2{
+ bottom: 290px;
+}
+ }
