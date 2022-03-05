@@ -27,7 +27,7 @@ let up_player = document.querySelector('#up_player');
 let song_name = document.querySelector('#song_name');
 let artist_name = document.querySelector('#artist_name');
 
-
+let firt_audio = document.querySelector('#audio1');
 /*default values*/
 let is_song_played = false;
 let song_status = false;
@@ -154,6 +154,7 @@ play_pause_btn.addEventListener('click', function(){
       this.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
   	}
     audio.pause();
+    firt_audio.pause();
 });
 
 
@@ -176,6 +177,7 @@ forward_btn.addEventListener('click', function(){
       play_song();
       random_bg_color();
       audio.pause();
+      firt_audio.pause();
 });
 
 
@@ -193,6 +195,7 @@ backward_btn.addEventListener('click', function(){
     play_song();
     random_bg_color();
     audio.pause();
+    firt_audio.pause();
 });
 
 
@@ -225,6 +228,7 @@ function play_song(){
   play_pause_btn.innerHTML = '<i class="fa fa-pause" aria-hidden="true"></i>';
   random_bg_color();
   audio.pause();
+  firt_audio.pause();
 }
 
 /*Lấy thời gian tết âm lịch (mily giây)*/
